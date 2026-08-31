@@ -11,7 +11,7 @@ export function Services({
     <section id="services" className="relative bg-secondary/40 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 sm:px-8">
         <SectionHeading
-          eyebrow="Our Craft"
+          eyebrow="What We Make"
           title="Our Craft"
           subtitle="Intricate details. Beautiful finishes. Handmade with love."
         />

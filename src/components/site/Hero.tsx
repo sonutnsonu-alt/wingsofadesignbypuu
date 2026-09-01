@@ -1,6 +1,16 @@
 import { ArrowDown, Instagram } from "lucide-react";
 import { brand } from "@/data/site";
 
+const heroPreviewImages = [
+  { src: "/WhatsApp Image 2026-08-31 at 22.19.58.jpeg", alt: "Antique gold zardosi blouse detail" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.19.59.jpeg", alt: "Lime and sapphire stone blouse" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.19.59 (1).jpeg", alt: "Emerald drop border embroidery" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.20.00.jpeg", alt: "Blush and emerald stone work blouse" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.20.00 (1).jpeg", alt: "Gold scallop neckline study" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.20.01.jpeg", alt: "Rani pink beaded neckline" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.20.01 (1).jpeg", alt: "Emerald silk with rani blouse" },
+];
+
 const sparkles = [
   { top: "18%", left: "12%", delay: "0s" },
   { top: "30%", left: "82%", delay: "1.2s" },

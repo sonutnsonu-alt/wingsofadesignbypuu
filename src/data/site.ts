@@ -14,8 +14,9 @@ export const brand = {
   artist: "Punya",
   phone: "+91 81474 06201",
   phoneHref: "tel:+918147406201",
-  instagram: "@id_wings_of_a_design_by_puu_",
-  instagramUrl: "https://www.instagram.com/id_wings_of_a_design_by_puu_/",
+  instagram: "@_wings_of_a_design_by_puu_",
+  instagramUrl:
+    "https://www.instagram.com/_wings_of_a_design_by_puu_?igsi=MXJ4amNmZ200Nno0ag==",
   tagline: "Handmade means Heart-Made",
   secondaryTagline: "Where every stitch tells a story.",
 };

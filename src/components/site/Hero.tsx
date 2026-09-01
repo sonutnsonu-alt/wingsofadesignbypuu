@@ -1,4 +1,5 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Instagram } from "lucide-react";
+import { brand } from "@/data/site";
 
 const sparkles = [
   { top: "18%", left: "12%", delay: "0s" },
@@ -122,6 +123,16 @@ export function Hero() {
             className="w-full max-w-xs border border-plum/50 px-9 py-4 text-[0.7rem] uppercase tracking-[0.26em] text-plum transition-all duration-300 hover:border-plum hover:bg-plum/5 sm:w-auto"
           >
             Contact Punya
+            Contact Punya
+          </a>
+          <a
+            href={brand.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-full max-w-xs items-center justify-center gap-3 border border-gold/70 bg-gold/10 px-9 py-4 text-[0.7rem] uppercase tracking-[0.26em] text-plum transition-all duration-300 hover:bg-rani hover:border-rani hover:text-ivory sm:w-auto"
+          >
+            <Instagram className="h-4 w-4" strokeWidth={1.4} />
+            Follow on Instagram
           </a>
         </div>
       </div>

@@ -121,7 +121,29 @@ export function Hero() {
           Punya.
         </p>
 
-        <div className="mt-11 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+        {/* hero work preview */}
+        <div className="mx-auto mt-10 max-w-4xl">
+          <p className="eyebrow mb-4 animate-in fade-in duration-1000">Recent work</p>
+          <div className="flex snap-x snap-mandatory gap-3 overflow-x-auto pb-4 sm:grid sm:grid-cols-7 sm:overflow-visible">
+            {heroPreviewImages.map((img, i) => (
+              <a
+                key={img.src}
+                href="#work"
+                className="group relative block shrink-0 snap-start overflow-hidden rounded-sm border border-gold/20 bg-ivory shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-gold/50 hover:shadow-md sm:w-auto"
+                style={{ animationDelay: `${i * 80}ms` }}
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="h-36 w-28 object-cover transition-transform duration-700 group-hover:scale-110 sm:h-32 sm:w-full md:h-40"
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <a
             href="#work"
             className="w-full max-w-xs bg-plum px-9 py-4 text-[0.7rem] uppercase tracking-[0.26em] text-ivory transition-all duration-300 hover:bg-rani sm:w-auto"
@@ -132,7 +154,6 @@ export function Hero() {
             href="#contact"
             className="w-full max-w-xs border border-plum/50 px-9 py-4 text-[0.7rem] uppercase tracking-[0.26em] text-plum transition-all duration-300 hover:border-plum hover:bg-plum/5 sm:w-auto"
           >
-            Contact Punya
             Contact Punya
           </a>
           <a

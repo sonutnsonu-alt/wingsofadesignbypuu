@@ -57,6 +57,30 @@ export function Footer() {
         <p className="mt-6 text-center text-[0.68rem] tracking-[0.14em] text-ivory/50">
           © 2026 {brand.name}. All Rights Reserved.
         </p>
+
+        <div className="mt-5 flex flex-col items-center gap-1.5 text-center">
+          <p className="text-[0.6rem] uppercase tracking-[0.26em] text-gold-soft/70">
+            Website by Sonu N
+          </p>
+          <p className="max-w-md text-[0.68rem] leading-relaxed text-ivory/40">
+            Let’s build your website. Reach out at{" "}
+            <a
+              href="tel:6366902141"
+              className="border-b border-gold-soft/30 pb-px transition-colors hover:text-gold-soft"
+            >
+              6366902141
+            </a>{" "}
+            or{" "}
+            <a
+              href="mailto:sonutnsonu@gmail.com"
+              className="break-all border-b border-gold-soft/30 pb-px transition-colors hover:text-gold-soft"
+            >
+              sonutnsonu@gmail.com
+            </a>
+            .
+          </p>
+        </div>
+
       </div>
     </footer>
   );

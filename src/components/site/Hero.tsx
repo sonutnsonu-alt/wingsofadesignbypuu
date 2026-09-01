@@ -1,4 +1,5 @@
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Instagram } from "lucide-react";
+import { brand } from "@/data/site";
 
 const sparkles = [
   { top: "18%", left: "12%", delay: "0s" },

@@ -1,6 +1,16 @@
 import { ArrowDown, Instagram } from "lucide-react";
 import { brand } from "@/data/site";
 
+const heroPreviewImages = [
+  { src: "/WhatsApp Image 2026-08-31 at 22.19.58.jpeg", alt: "Antique gold zardosi blouse detail" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.19.59.jpeg", alt: "Lime and sapphire stone blouse" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.19.59 (1).jpeg", alt: "Emerald drop border embroidery" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.20.00.jpeg", alt: "Blush and emerald stone work blouse" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.20.00 (1).jpeg", alt: "Gold scallop neckline study" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.20.01.jpeg", alt: "Rani pink beaded neckline" },
+  { src: "/WhatsApp Image 2026-08-31 at 22.20.01 (1).jpeg", alt: "Emerald silk with rani blouse" },
+];
+
 const sparkles = [
   { top: "18%", left: "12%", delay: "0s" },
   { top: "30%", left: "82%", delay: "1.2s" },
@@ -111,7 +121,29 @@ export function Hero() {
           Punya.
         </p>
 
-        <div className="mt-11 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
+        {/* hero work preview */}
+        <div className="mx-auto mt-10 max-w-5xl">
+          <p className="eyebrow mb-4 animate-in fade-in duration-1000">Recent work</p>
+          <div className="flex snap-x snap-mandatory gap-3 overflow-x-auto pb-4 sm:flex-wrap sm:justify-center sm:overflow-visible">
+            {heroPreviewImages.map((img, i) => (
+              <a
+                key={img.src}
+                href="#work"
+                className="group relative block shrink-0 snap-start overflow-hidden rounded-sm border border-gold/20 bg-ivory shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-gold/50 hover:shadow-md"
+                style={{ animationDelay: `${i * 80}ms` }}
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                  className="h-36 w-28 object-cover transition-transform duration-700 group-hover:scale-110 sm:h-32 sm:w-24 md:h-36 md:w-28 lg:h-40 lg:w-32"
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <a
             href="#work"
             className="w-full max-w-xs bg-plum px-9 py-4 text-[0.7rem] uppercase tracking-[0.26em] text-ivory transition-all duration-300 hover:bg-rani sm:w-auto"
@@ -122,7 +154,6 @@ export function Hero() {
             href="#contact"
             className="w-full max-w-xs border border-plum/50 px-9 py-4 text-[0.7rem] uppercase tracking-[0.26em] text-plum transition-all duration-300 hover:border-plum hover:bg-plum/5 sm:w-auto"
           >
-            Contact Punya
             Contact Punya
           </a>
           <a

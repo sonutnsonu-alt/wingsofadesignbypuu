@@ -1,13 +1,14 @@
-import work82 from "@/assets/work-82.jpeg.asset.json";
-import work83 from "@/assets/work-83.jpeg.asset.json";
-import work84 from "@/assets/work-84.jpeg.asset.json";
-import work85 from "@/assets/work-85.jpeg.asset.json";
-import work86 from "@/assets/work-86.jpeg.asset.json";
-import work87 from "@/assets/work-87.jpeg.asset.json";
-import work88 from "@/assets/work-88.jpeg.asset.json";
 import textureThread from "@/assets/texture-thread.jpeg";
 import textureSequence from "@/assets/texture-sequence.jpeg";
 import textureNet from "@/assets/texture-net.jpeg";
+
+const work82 = "/hero-1.jpeg";
+const work85 = "/hero-2.jpeg";
+const work83 = "/hero-3.jpeg";
+const work87 = "/hero-4.jpeg";
+const work84 = "/hero-5.jpeg";
+const work88 = "/hero-6.jpeg";
+const work86 = "/hero-7.jpeg";
 
 export const brand = {
   name: "Wings_Of_a_design_by_puu",
@@ -58,7 +59,7 @@ export type PortfolioItem = {
 export const portfolio: PortfolioItem[] = [
   {
     id: "rani-beadwork-blouse",
-    image: work86.url,
+    image: work86,
     title: "Rani Pink Beaded Neckline",
     category: "BEADS",
     description:
@@ -67,7 +68,7 @@ export const portfolio: PortfolioItem[] = [
   },
   {
     id: "gold-scallop-set",
-    image: work87.url,
+    image: work87,
     title: "Gold Scallop Neckline Study",
     category: "BEADS",
     description:
@@ -76,7 +77,7 @@ export const portfolio: PortfolioItem[] = [
   },
   {
     id: "green-saree-pink-blouse",
-    image: work88.url,
+    image: work88,
     title: "Emerald Silk, Rani Blouse",
     category: "ZARDOSI",
     description:
@@ -85,7 +86,7 @@ export const portfolio: PortfolioItem[] = [
   },
   {
     id: "pink-emerald-stone-blouse",
-    image: work84.url,
+    image: work84,
     title: "Blush & Emerald Stone Work",
     category: "STONE",
     description:
@@ -94,7 +95,7 @@ export const portfolio: PortfolioItem[] = [
   },
   {
     id: "emerald-drop-border",
-    image: work85.url,
+    image: work85,
     title: "Emerald Drop Border",
     category: "STONE",
     description:
@@ -103,7 +104,7 @@ export const portfolio: PortfolioItem[] = [
   },
   {
     id: "yellow-blue-stone-blouse",
-    image: work83.url,
+    image: work83,
     title: "Lime & Sapphire Stone Blouse",
     category: "STONE",
     description:
@@ -112,7 +113,7 @@ export const portfolio: PortfolioItem[] = [
   },
   {
     id: "gold-brown-zardosi",
-    image: work82.url,
+    image: work82,
     title: "Antique Gold Zardosi Blouse",
     category: "ZARDOSI",
     description:
@@ -154,7 +155,7 @@ export const services = [
     name: "Beads Work",
     description:
       "Elegant bead detailing that adds texture, dimension and sophistication.",
-    image: work86.url,
+    image: work86,
     category: "BEADS" as Category,
   },
   {
@@ -162,7 +163,7 @@ export const services = [
     name: "Zardosi Work",
     description:
       "Traditional Zardosi craftsmanship with intricate and luxurious detailing.",
-    image: work82.url,
+    image: work82,
     category: "ZARDOSI" as Category,
   },
   {
@@ -177,7 +178,7 @@ export const services = [
     name: "Stone Work",
     description:
       "Beautiful stone embellishments for a sophisticated and glamorous finish.",
-    image: work84.url,
+    image: work84,
     category: "STONE" as Category,
   },
   {
@@ -221,13 +222,13 @@ export const processSteps = [
 ];
 
 export const instagramGrid = [
-  work86.url,
-  work84.url,
-  work88.url,
-  work82.url,
-  work85.url,
-  work83.url,
+  work86,
+  work84,
+  work88,
+  work82,
+  work85,
+  work83,
 ];
 
-export const featuredImage = work82.url;
-export const heroImage = work88.url;
+export const featuredImage = work82;
+export const heroImage = work88;

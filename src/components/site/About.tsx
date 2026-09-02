@@ -1,4 +1,4 @@
-import portrait from "@/assets/portrait-placeholder.jpg";
+import portrait from "@/assets/portrait-placeholder.jpeg";
 import { Reveal } from "./Reveal";
 
 export function About() {

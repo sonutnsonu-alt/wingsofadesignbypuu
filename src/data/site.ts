@@ -5,9 +5,9 @@ import work85 from "@/assets/work-85.jpg.asset.json";
 import work86 from "@/assets/work-86.jpg.asset.json";
 import work87 from "@/assets/work-87.jpg.asset.json";
 import work88 from "@/assets/work-88.jpg.asset.json";
-import textureThread from "@/assets/texture-thread.jpg";
-import textureSequence from "@/assets/texture-sequence.jpg";
-import textureNet from "@/assets/texture-net.jpg";
+import textureThread from "@/assets/texture-thread.jpeg";
+import textureSequence from "@/assets/texture-sequence.jpeg";
+import textureNet from "@/assets/texture-net.jpeg";
 
 export const brand = {
   name: "Wings_Of_a_design_by_puu",
